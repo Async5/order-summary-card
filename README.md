@@ -29,7 +29,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Flexbox
+- Flexbox
 - Mobile-first workflow
 - Sass/scss
 
