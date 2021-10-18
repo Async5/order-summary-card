@@ -1,0 +1,92 @@
+.card {
+  max-width: 28.125rem;
+  margin: 0 auto;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 20px 10px;
+
+  @include breakpoint-down {
+    width: calc(100% - 1.25rem * 2);
+  }
+
+  @include breakpoint-up {
+    max-height: 43.75rem;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    padding: 3rem;
+    margin-top: 0.3rem;
+
+    @include breakpoint-down {
+      padding: 1.625rem;
+    }
+
+    .pricing {
+      padding: 1.625rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $very-pale-blue;
+      border-radius: 1rem;
+      margin-bottom: 2.5rem;
+
+      @include breakpoint-down {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      @media screen and (max-width: 20.9375rem) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__left {
+        display: flex;
+
+        @media screen and (max-width: 20.9375rem) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &-icon {
+          margin-right: 1.3125rem;
+
+          @include breakpoint-down {
+            margin-right: 1rem;
+          }
+
+          @media screen and (max-width: 20.9375rem) {
+            margin-right: unset;
+          }
+        }
+
+        &-text {
+          span {
+            color: $desaturated-blue;
+          }
+        }
+      }
+
+      &__right {
+        span {
+          color: $bright-blue;
+          text-decoration: underline;
+          font-weight: 700;
+          font-size: 0.875rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

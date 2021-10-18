@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #e0e8ff;
+  font-family: $font-primary;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-image: url('../../app/images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  padding: 2rem 0rem;
+
+  @include breakpoint-down {
+    background-image: url('../../app/images/pattern-background-mobile.svg');
+  }
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: $dark-blue;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @include breakpoint-down {
+    font-size: 1.375rem;
+  }
+}
+
+h4 {
+  font-size: 1rem;
+  color: $dark-blue;
+  margin-bottom: 3px;
+}
+
+p {
+  font-size: 1rem;
+  color: $desaturated-blue;
+  text-align: center;
+  line-height: 155%;
+  margin-bottom: 1.75rem;
+  @include breakpoint-down {
+    width: 95%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  width: 100%;
+  padding: 0.9375rem 0;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  background-color: $bright-blue;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 16px 30px 2px #392ae128;
+  display: block;
+  margin-bottom: 1.125rem;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &-sub {
+    width: 100%;
+    padding: 0.625rem 0;
+    font-size: 0.9375rem;
+    font-weight: 900;
+    color: $desaturated-blue;
+    text-align: center;
+    display: block;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}

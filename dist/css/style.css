@@ -1,0 +1,230 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-image: url("../../app/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  padding: 2rem 0rem;
+}
+
+@media screen and (max-width: 31.25rem) {
+  body {
+    background-image: url("../../app/images/pattern-background-mobile.svg");
+  }
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: #1f2f56;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 31.25rem) {
+  h2 {
+    font-size: 1.375rem;
+  }
+}
+
+h4 {
+  font-size: 1rem;
+  color: #1f2f56;
+  margin-bottom: 3px;
+}
+
+p {
+  font-size: 1rem;
+  color: #7280a7;
+  text-align: center;
+  line-height: 155%;
+  margin-bottom: 1.75rem;
+}
+
+@media screen and (max-width: 31.25rem) {
+  p {
+    width: 95%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  width: 100%;
+  padding: 0.9375rem 0;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  background-color: #3829e0;
+  color: white;
+  text-align: center;
+  -webkit-box-shadow: 0px 16px 30px 2px #392ae128;
+          box-shadow: 0px 16px 30px 2px #392ae128;
+  display: block;
+  margin-bottom: 1.125rem;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.button-sub {
+  width: 100%;
+  padding: 0.625rem 0;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  color: #7280a7;
+  text-align: center;
+  display: block;
+}
+
+.button-sub:hover {
+  color: #1f2f56;
+}
+
+.card {
+  max-width: 28.125rem;
+  margin: 0 auto;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 20px 10px;
+          box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 20px 10px;
+}
+
+@media screen and (max-width: 31.25rem) {
+  .card {
+    width: calc(100% - 1.25rem * 2);
+  }
+}
+
+@media screen and (min-width: 31.25rem) {
+  .card {
+    max-height: 43.75rem;
+  }
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__text {
+  padding: 3rem;
+  margin-top: 0.3rem;
+}
+
+@media screen and (max-width: 31.25rem) {
+  .card__text {
+    padding: 1.625rem;
+  }
+}
+
+.card__text .pricing {
+  padding: 1.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 1rem;
+  margin-bottom: 2.3rem;
+}
+
+@media screen and (max-width: 31.25rem) {
+  .card__text .pricing {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 20.9375rem) {
+  .card__text .pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.card__text .pricing__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 20.9375rem) {
+  .card__text .pricing__left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.card__text .pricing__left-icon {
+  margin-right: 1.3125rem;
+}
+
+@media screen and (max-width: 31.25rem) {
+  .card__text .pricing__left-icon {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 20.9375rem) {
+  .card__text .pricing__left-icon {
+    margin-right: unset;
+  }
+}
+
+.card__text .pricing__left-text span {
+  color: #7280a7;
+}
+
+.card__text .pricing__right span {
+  color: #3829e0;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
